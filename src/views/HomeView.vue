@@ -1,7 +1,16 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import { ref, onMounted } from "vue";
+import Header from "@/components/Landing/Header.vue";
+import Box from "@/components/Landing/Box.vue";
+import Footer from "@/components/Landing/Footer.vue";
+import Posts from "@/components/Landing/Posts.vue";
+
+
 </script>
 
 <template>
-  <h1>home</h1>>
+  <Header></Header>
+  <Box></Box>
+  <Posts></Posts>
+  <Footer></Footer>
 </template>

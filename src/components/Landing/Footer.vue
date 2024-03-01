@@ -1,0 +1,20 @@
+<template>
+    <footer>
+        <div class="footerbox">
+            <img class="vector" :src="f1" alt="f1">
+            <img class="vector" :src="f2" alt="f2">
+            <img class="vector" :src="f3" alt="f3">
+            <img class="vector" :src="f4" alt="f4">
+        </div>
+    </footer>
+</template>
+
+<script setup>
+import f1 from "@/assets/img/1-f.png";
+import f2 from "@/assets/img/2-f.png";
+import f3 from "@/assets/img/3-f.png";
+import f4 from "@/assets/img/4-f.png";
+
+</script>
+
+    
