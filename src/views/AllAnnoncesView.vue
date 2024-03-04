@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { AnnonceGetAll } from "@/services/annonce.js";
+import Footer from "@/components/Landing/Footer.vue";
 
 const Annonces = ref([]);
 
@@ -18,6 +19,7 @@ onMounted(() => {
 });
 import arrow from "@/assets/img/arrow-in-up-right.png";
 </script>
+
 <template>
     <div class="container-mar-all">
         <h2 class="text-center text-white marine">Derniers ajouts</h2>
@@ -30,7 +32,5 @@ import arrow from "@/assets/img/arrow-in-up-right.png";
             </div>
         </div>
     </div>
+    <Footer></Footer>
 </template>
-
-
-

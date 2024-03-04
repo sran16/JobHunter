@@ -19,6 +19,7 @@
     font-family: "Oswald", sans-serif;
     margin: 0;
     overflow: hidden;
+    overflow-y: scroll;
     padding: 0;
   }
   header {
@@ -67,6 +68,7 @@
     padding: 0;
     position: fixed;
     bottom: 0;
+    width: 100vw;
   }
   .vector {
     width: 24px;
@@ -367,18 +369,48 @@
     padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
   }
   .marine-box {
     width: 90vw;
-    height: 24vh;
+    height: fit-content;
     border-radius: 10px;
     background: rgba(240, 245, 249, 0.1);
-    padding: 24px;
+    padding: 16px;
     color: var(--white);
   }
   .marine-content h3 {
     display: flex;
     justify-content: space-between;
+  }
+
+  .cv {
+    width: 90vw;
+    height: fit-content;
+    border-radius: 10px;
+    background: rgba(240, 245, 249, 0.1);
+    padding: 24px;
+    color: var(--white);
+  }
+  .dash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    padding: 16px;
+  }
+  .dash-elements {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    width: 90vw;
+    height: 10vh;
+    border-radius: 10px 10px 90px 10px;
+    background: rgba(240, 245, 249, 0.1);
+  }
+  .bi-arrow-right-circle {
+    display: flex;
+    font-size: 40px;
+    justify-content: flex-end;
   }
 }

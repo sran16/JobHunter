@@ -8,6 +8,7 @@ import CoverletterView from "../views/form_desktop/CoverletterView.vue";
 import AnnonceView from "../views/form_desktop/AnnonceView.vue";
 import AllAnnoncesView from "@/views/AllAnnoncesView.vue";
 import CoverletterVisualVue from "@/views/CoverletterVisualVue.vue";
+import DashboardView from "@/views/DashboardView.vue";  
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +57,11 @@ const router = createRouter({
       path: "/Coverletter",
       name: "Coverletter",
       component: CoverletterView,
+    },
+    {
+      path: "/dashboard",
+      name: "dashboard",
+      component: DashboardView,
     },
     {
       path: "/about",
