@@ -7,25 +7,27 @@ import Header from "@/components/Landing/Header.vue";
 
 <template>
     <Header></Header>
-    <h3 class="dash-h3">Sélectionnez le formulaire de votre choix : </h3>
-    <div class="dash-container">
-        <div class="dash-elements">
-            <p>Suivi de candidature</p>
-            <RouterLink to="/Candidature">
-                <i class="bi bi-arrow-right-circle"></i>
-            </RouterLink>
-        </div>
-        <div class="dash-elements">
-            <p>Lettre de motivation</p>
-            <RouterLink to="/Coverletter">
-                <i class="bi bi-arrow-right-circle"></i>
-            </RouterLink>
-        </div>
-        <div class="dash-elements">
-            <p>Annonces </p>
-            <RouterLink to="/Annonce">
-                <i class="bi bi-arrow-right-circle"></i>
-            </RouterLink>
+    <div>
+        <h3 class="dash-h3">Sélectionnez le formulaire de votre choix : </h3>
+        <div class="dash-container">
+            <div class="dash-elements">
+                <p>Suivi de candidature</p>
+                <RouterLink to="/Candidature">
+                    <i class="bi bi-arrow-right-circle"></i>
+                </RouterLink>
+            </div>
+            <div class="dash-elements">
+                <p>Lettre de motivation</p>
+                <RouterLink to="/Coverletter">
+                    <i class="bi bi-arrow-right-circle"></i>
+                </RouterLink>
+            </div>
+            <div class="dash-elements">
+                <p>Annonces </p>
+                <RouterLink to="/Annonce">
+                    <i class="bi bi-arrow-right-circle"></i>
+                </RouterLink>
+            </div>
         </div>
     </div>
     <Footer></Footer>

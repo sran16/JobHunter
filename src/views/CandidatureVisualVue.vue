@@ -44,7 +44,7 @@ onMounted(() => {
         </div>
 
     </div>
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
 </template>
 
 <style scoped>

@@ -47,7 +47,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="create-logo">
             <div class="welcoming-create">
                 <h1>Inscrivez-vous</h1>
-                <p>Connectez-vous à votre compte </p>
+                <p>Créer votre compte</p>
             </div>
             <img :src="LogoMini">
         </div>
@@ -70,7 +70,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <p>Mot de passe oublié ?</p>
 
 
-            <button class="btn-form" @click="createAccount">Create</button>
+            <button class="btn-form" @click="createAccount">Créer</button>
 
         </div>
         <p>Vous avez un compte ?<strong>

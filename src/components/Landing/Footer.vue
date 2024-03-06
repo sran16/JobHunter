@@ -4,7 +4,7 @@
 
             <RouterLink to="/profile"> <img class="vector" :src="f1" alt="f1"> </RouterLink>
             <RouterLink to="/"> <img class="vector" :src="f2" alt="f2"> </RouterLink>
-            <RouterLink to="/Candidature"> <img class="vector" :src="f3" alt="f3"> </RouterLink>
+            <RouterLink to="/CandidatureVisual"> <img class="vector" :src="f3" alt="f3"> </RouterLink>
             <RouterLink to="/login"> <img @click="logout" class="vector" :src="f4" alt="f4"></RouterLink>
 
         </div>
