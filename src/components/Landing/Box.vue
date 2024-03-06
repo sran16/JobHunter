@@ -4,7 +4,7 @@
         <p>JobHunter votre compagnon dédié à la découverte d'opportunités enrichissantes en stage et en alternance,
             simplifiant votre recherche pour un avenir professionnel prometteur.</p>
         <button>
-            <RouterLink to="/login">Get started</RouterLink>
+            <RouterLink to="/login">Découvrir</RouterLink>
         </button>
     </div>
 </template>

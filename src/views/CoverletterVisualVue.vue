@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import { CoverletterGetAll } from "@/services/coverletter.js";
 import Footer from "@/components/Landing/Footer.vue";
+import { RouterLink } from "vue-router";
 
 const Coverletters = ref([]);
 
@@ -22,7 +23,10 @@ onMounted(() => {
 
 <template>
     <div class="container-mar-all">
-        <h2 class="text-center text-white marine">Votre CV </h2>
+        <div class="back-icon">
+            <RouterLink to="/profile"><i class="bi bi-arrow-return-left"></i></RouterLink>
+            <h2 class="text-center text-white marine">Votre lettre de motivation </h2>
+        </div>
 
         <div class="container cv" v-for="Coverletter in Coverletters">
             <div class="cv-content">
@@ -32,6 +36,24 @@ onMounted(() => {
                 <p>{{ Coverletter.Url }}</p>
             </div>
         </div>
+
     </div>
     <Footer></Footer>
 </template>
+
+<style scoped>
+.back-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.back-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+
+}
+</style>

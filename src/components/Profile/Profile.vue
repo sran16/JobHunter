@@ -3,7 +3,7 @@
         <div class="row ">
             <div class="col col-left-top">
                 <p>Suivi de candidature</p>
-                <RouterLink to="/CoverletterVisual">
+                <RouterLink to="/CandidatureVisual">
                     <p><i class="bi bi-graph-up-arrow"></i></p>
                 </RouterLink>
             </div>

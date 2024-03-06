@@ -16,16 +16,16 @@ async function loadData() {
 onMounted(() => {
     loadData();
 });
-import arrow from "@/assets/img/arrow-in-up-right.png";
 </script>
 <template>
     <div class="right-side">
         <div class="posts-box" v-for="website in websites">
             <div class="post">
+                <a :href="website.url"><i class="bi bi-box-arrow-in-up-right"></i></a>
                 <img class="logo-post" :src="website.image[0].signedUrl">
-                <p>{{ website.title }}</p>
+                <p class="name-site"><strong>{{ website.title }}</strong></p>
                 <p>{{ website.description }}</p>
-                <a :href="website.url"><img :src="arrow"></a>
+                
             </div>
         </div>
     </div>

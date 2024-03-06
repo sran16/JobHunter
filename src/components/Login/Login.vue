@@ -65,10 +65,10 @@ import { RouterLink, RouterView } from 'vue-router'
                     <label for="password"><img :src="Close" alt="close">Mot de passe</label>
                     <input class="box-form" type="password" v-model="form.password" />
                 </div>
-                <div class="labele">
+                <!-- <div class="labele">
                     <label for="name">Nom</label>
                     <input class="box-form" type="text" v-model="form.name" />
-                </div>
+                </div> -->
                 <p>Mot de passe oublié ?</p>
 
 

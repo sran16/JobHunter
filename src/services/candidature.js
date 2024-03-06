@@ -15,3 +15,17 @@ class Candidature {
 }
 const candidatureInstance = new Candidature();
 export default candidatureInstance;
+
+export async function CandidatureGetAll() {
+  const response = await instance.get(`/Candidature/`, {
+    params: {
+      offset: "0",
+      limit: "100",
+      where: "",
+    },
+  });
+  console.log(response);
+  console.log(response.data);
+  console.table(response.data.list);
+  return response.data;
+}

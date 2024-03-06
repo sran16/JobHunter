@@ -12,5 +12,5 @@ import Posts from "@/components/Landing/Posts.vue";
   <Header></Header>
   <Box></Box>
   <Posts></Posts>
-  <Footer></Footer>
+  <!-- <Footer></Footer> -->
 </template>

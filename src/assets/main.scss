@@ -5,6 +5,81 @@
   --white: white;
 }
 
+$couleur-test: #26294c;
+$couleur-detail: #f0f5f9;
+
+body {
+  background: #f0f5f9;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.first {
+  text-align: center;
+  color: #f0f5f9;
+  margin-top: 16px;
+}
+
+#form {
+  padding: 20px;
+  background-color: $couleur-test;
+  border-radius: 10px;
+
+  // .ligne {
+  //   display: flex;
+  //   margin-bottom: 10px;
+
+  p {
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+
+    input {
+      width: 100%;
+      border: 10px;
+      outline: none;
+    }
+  }
+  // }
+  textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+  }
+  p {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+    color: black;
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .form-select {
+    width: 62%;
+  }
+
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(38, 41, 76, 0.4);
+    color: var(--white);
+  }
+}
+
 @media (max-width: 767px) {
   .login {
     background-color: var(--secondary);
@@ -19,7 +94,7 @@
     font-family: "Oswald", sans-serif;
     margin: 0;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 0;
   }
   header {
@@ -66,7 +141,7 @@
     height: 74px;
     border-top: 1px solid rgba(240, 245, 249, 0.1);
     padding: 0;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100vw;
   }
@@ -108,13 +183,11 @@
 
   .posts-box {
     width: 37vw;
-    height: 39vh;
-    border-radius: 30px 0px;
-    background: rgba(240, 245, 249, 0.15);
-    /* padding: 11px; */
+    height: 36vh;
+    border-radius: 0px 39px 0px 0px;
+    background: var(--detail);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 13px;
     text-align: start;
   }
@@ -126,7 +199,6 @@
     width: 100%;
   }
   .logo-post {
-    width: 100px;
     border-bottom: rgba(255, 255, 255, 0.825) 1px solid;
   }
   .post {
@@ -142,12 +214,16 @@
     margin: 0;
     font-size: 16px;
     font-family: "inter", sans-serif;
+    color: black;
     /* text-align: center; */
   }
   .post a {
     text-decoration: none;
-    color: var(--white);
-    text-align: center;
+    color: #53616c;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
   }
   .box a {
     text-decoration: none;
@@ -178,7 +254,7 @@
     height: 76vh;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 69px;
     align-items: center;
   }
   .contain-form p {
@@ -245,6 +321,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: end;
   }
   .btn-form {
     width: 341px;
@@ -307,7 +384,7 @@
   .contain-create {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 130px;
     align-items: center;
     height: 100vh;
   }
@@ -361,6 +438,8 @@
     font-size: 32px;
     font-style: normal;
     line-height: normal;
+    margin: 0;
+    padding-top: 8px;
   }
   .container-mar {
     padding: 8px;
@@ -369,7 +448,7 @@
     padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
   }
   .marine-box {
     width: 90vw;
@@ -389,7 +468,7 @@
     height: fit-content;
     border-radius: 10px;
     background: rgba(240, 245, 249, 0.1);
-    padding: 24px;
+    padding: 16px;
     color: var(--white);
   }
   .dash-container {
@@ -398,15 +477,28 @@
     align-items: center;
     gap: 56px;
     padding: 16px;
+    justify-content: center;
+    height: 41vh;
+    background-color: #d2d4eb;
+    width: 80vw;
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    border-radius: 10px;
   }
   .dash-elements {
     display: flex;
-    flex-direction: column;
-    // align-items: center;
-    width: 90vw;
-    height: 10vh;
+    flex-direction: row;
+    width: 56vw;
+    height: 6vh;
     border-radius: 10px 10px 90px 10px;
-    background: rgba(240, 245, 249, 0.1);
+    background: rgba(38, 41, 76, 0.4);
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 8px;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
   }
   .bi-arrow-right-circle {
     display: flex;
