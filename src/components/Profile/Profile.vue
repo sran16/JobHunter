@@ -22,7 +22,7 @@
                 </RouterLink>
             </div>
             <div class="col col-right-b">
-                <p>Formulaires (Desktop seulement)</p>
+                <p>Formulaires</p>
                 <RouterLink to="/dashboard">
                     <p><i class="bi bi-plus-square"></i></p>
                 </RouterLink>
